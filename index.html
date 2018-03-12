@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>atStyle Demo</title>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="atStyle.css">
+<style>
+	section {
+		padding-bottom: 10px;
+	}
+</style>
+</head>
+<body padding="20">
+
+	<section border="bottom">
+		<h2>View</h2>
+		<div layout="flex">
+			<div border="top-left bottom-right" margin="10" padding="10" style="width: 33%; height: 100px;"><p>view="small"</p><div view="small" style="height: 50px;" bg="light">show at small</div></div>
+			<div border="top-left bottom-right" margin="10" padding="10" style="width: 33%; height: 100px;"><p>view="medium"</p><div view="medium" style="height: 50px;" bg="dark">show at medium</div></div>
+			<div border="top-left bottom-right" margin="10" padding="10" style="width: 33%; height: 100px;"><p>view="large"</p><div view="large" style="height: 50px;" bg="gray">show at large</div></div>
+		</div>
+		<div layout="flex">
+			<div border="top-left bottom-right" margin="10" padding="10" style="width: 50%; height: 100px;"><p>view="small-hide"</p><div view="small-hide" style="height: 50px;" bg="gray">show at medium large</div></div>
+			<div border="top-left bottom-right" margin="10" padding="10" style="width: 50%; height: 100px;"><p>view="large-hide"</p><div view="large-hide" style="height: 50px;" bg="light">show at small medium</div></div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Layout</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<p>layout="block"</p>
+			<div layout="block" style="height: 50px;" bg="light">block</div>
+			<div layout="block" style="height: 50px;" bg="dark">block</div>
+			<div layout="block" style="height: 50px;" bg="gray">block</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<p>layout="inline"</p>
+			<div layout="inline" style="height: 50px;" bg="light">inline</div>
+			<div layout="inline" style="height: 50px;" bg="dark">inline</div>
+			<div layout="inline" style="height: 50px;" bg="gray">inline</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<p>layout="inline-block"</p>
+			<div layout="inline-block" style="height: 50px;" bg="light">inline-block</div>
+			<div layout="inline-block" style="height: 50px;" bg="dark">inline-block</div>
+			<div layout="inline-block" style="height: 50px;" bg="gray">inline-block</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<p>layout="flex"</p>
+			<div layout="flex" bg="gray">
+				<div style="height: 50px;" bg="light">flex</div>
+				<div style="height: 50px;" bg="dark">flex</div>
+				<div style="height: 50px;" bg="gray">flex</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<p>layout="inline-flex"</p>
+			<div layout="inline-flex" bg="gray">
+				<div style="height: 50px;opacity: 0.5" bg="light">inline-flex</div>
+				<div style="height: 50px;opacity: 0.5" bg="dark">inline-flex</div>
+				<div style="height: 50px;opacity: 0.5" bg="gray">inline-flex</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Flex</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" bg="gray">
+				<div flex="1" style="height: 50px;" bg="light">flex="1"</div>
+				<div flex="1" style="height: 50px;" bg="cold">flex"1"</div>
+				<div flex="1" style="height: 50px;" bg="gray">flex="1"</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" bg="gray">
+				<div flex="1" style="height: 50px;" bg="light">flex="1"</div>
+				<div flex="3" style="height: 50px;" bg="cold">flex"3"</div>
+				<div flex="5" style="height: 50px;" bg="gray">flex="5"</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" bg="gray">
+				<div flex="1" style="height: 50px;" bg="light">flex="1"</div>
+				<div flex="2" style="height: 50px;" bg="cold">flex="2"</div>
+				<div flex="3" style="height: 50px;" bg="gray">flex="3"</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" bg="gray">
+				<div flex="4" style="height: 50px;" bg="light">flex="4"</div>
+				<div flex="5" style="height: 50px;" bg="cold">flex="5"</div>
+				<div flex="6" style="height: 50px;" bg="gray">flex="6"</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" bg="gray">
+				<div flex="7" style="height: 50px;" bg="light">flex="7"</div>
+				<div flex="8" style="height: 50px;" bg="cold">flex="8"</div>
+				<div flex="9" style="height: 50px;" bg="gray">flex="9"</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" bg="gray">
+				<div flex="2" style="height: 50px;" bg="light">flex="2"</div>
+				<div flex="6" style="height: 50px;" bg="cold">flex="6"</div>
+				<div flex="8" style="height: 50px;" bg="gray">flex="8"</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Flex-flow</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="row" bg="gray">
+				<div flex="1" style="height: 50px;" bg="light">row</div>
+				<div flex="1" style="height: 50px;" bg="cold">row</div>
+				<div flex="1" style="height: 50px;" bg="gray">row</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="column" bg="em" padding="10" style="height: 200px;">
+				<div style="height: 50px;" bg="light">coloum</div>
+				<div style="height: 50px;" bg="cold">coloum</div>
+				<div style="height: 50px;" bg="gray">coloum</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="nowrap" style="width: 200px;">
+				<div style="width:100px; height: 50px;" bg="light">nowrap</div>
+				<div style="width:100px; height: 50px;" bg="cold">nowrap</div>
+				<div style="width:100px; height: 50px;" bg="gray">nowrap</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap" style="width: 200px;">
+				<div style="width:100px; height: 50px;" bg="light">wrap</div>
+				<div style="width:100px; height: 50px;" bg="cold">wrap</div>
+				<div style="width:100px; height: 50px;" bg="gray">wrap</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Flex-align</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="center" style="height: 100px;">
+				<div style="width:50px;height: 50px;" bg="light">center</div>
+				<div style="width:50px;height: 50px;" bg="cold">center</div>
+				<div style="width:50px;height: 50px;" bg="gray">center</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="x-start" style="height: 100px;">
+				<div style="width:50px;height: 50px;" bg="light">x-start</div>
+				<div style="width:50px;height: 50px;" bg="cold">x-start</div>
+				<div style="width:50px;height: 50px;" bg="gray">x-start</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="x-end" style="height: 100px;">
+				<div style="width:50px;height: 50px;" bg="light">x-end</div>
+				<div style="width:50px;height: 50px;" bg="cold">x-end</div>
+				<div style="width:50px;height: 50px;" bg="gray">x-end</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="x-center" style="height: 100px;">
+				<div style="width:50px;height: 50px;" bg="light">x-center</div>
+				<div style="width:50px;height: 50px;" bg="cold">x-center</div>
+				<div style="width:50px;height: 50px;" bg="gray">x-center</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="x-between" style="height: 100px;">
+				<div style="width:50px;height: 50px;" bg="light">x-between</div>
+				<div style="width:50px;height: 50px;" bg="cold">x-between</div>
+				<div style="width:50px;height: 50px;" bg="gray">x-between</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="x-around" style="height: 100px;">
+				<div style="width:50px;height: 50px;" bg="light">x-around</div>
+				<div style="width:50px;height: 50px;" bg="cold">x-around</div>
+				<div style="width:50px;height: 50px;" bg="gray">x-around</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="y-start" style="height: 100px;">
+				<div style="width:50px;" bg="light">y-start</div>
+				<div style="width:50px;" bg="cold">y-start</div>
+				<div style="width:50px;" bg="gray">y-start</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="y-end" style="height: 100px;">
+				<div style="width:50px;" bg="light">y-end</div>
+				<div style="width:50px;" bg="cold">y-end</div>
+				<div style="width:50px;" bg="gray">y-end</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="y-center" style="height: 100px;">
+				<div style="width:50px;" bg="light">y-center</div>
+				<div style="width:50px;" bg="cold">y-center</div>
+				<div style="width:50px;" bg="gray">y-center</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="y-stretch" style="height: 100px;">
+				<div style="width:50px;" bg="light">y-stretch</div>
+				<div style="width:50px;" bg="cold">y-stretch</div>
+				<div style="width:50px;" bg="gray">y-stretch</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="y-baseline" style="height: 100px;">
+				<div style="width:100px; line-height: 30px;" bg="light">y-baseline</div>
+				<div style="width:100px; line-height: 40px;" bg="cold">y-baseline</div>
+				<div style="width:100px; line-height: 50px;" bg="gray">y-baseline</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap" flex-align="y-between" style="width: 180px; height: 300px;">
+				<div style="width:50px;" bg="light">y-between</div>
+				<div style="width:50px;" bg="cold">y-between</div>
+				<div style="width:50px;" bg="gray">y-between</div>
+				<div style="width:50px;" bg="light">y-between</div>
+				<div style="width:50px;" bg="cold">y-between</div>
+				<div style="width:50px;" bg="gray">y-between</div>
+				<div style="width:50px;" bg="light">y-between</div>
+				<div style="width:50px;" bg="cold">y-between</div>
+				<div style="width:50px;" bg="gray">y-between</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap" flex-align="y-around" style="width: 180px; height: 300px;">
+				<div style="width:50px;" bg="light">y-around</div>
+				<div style="width:50px;" bg="cold">y-around</div>
+				<div style="width:50px;" bg="gray">y-around</div>
+				<div style="width:50px;" bg="light">y-around</div>
+				<div style="width:50px;" bg="cold">y-around</div>
+				<div style="width:50px;" bg="gray">y-around</div>
+				<div style="width:50px;" bg="light">y-around</div>
+				<div style="width:50px;" bg="cold">y-around</div>
+				<div style="width:50px;" bg="gray">y-around</div>
+			</div>
+		</div>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-align="center" style="height: 100px;">
+				<div flex-align="self-center" style="width:50px;" bg="light">self-center</div>
+				<div flex-align="self-start" style="width:50px;" bg="cold">self-start</div>
+				<div flex-align="self-end" style="width:50px;" bg="gray">self-end</div>
+				<div flex-align="self-baseline" style="width:50px;" bg="gray">self-baseline</div>
+				<div flex-align="self-stretch" style="width:50px;" bg="light">self-stretch</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Border</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap">
+				<div margin="10" border="top" style="width:200px; height: 50px;">border="top"</div>
+				<div margin="10" border="bottom" style="width:200px; height: 50px;;">border"bottom"</div>
+				<div margin="10" border="left" style="width:200px; height: 50px;;">border="left"</div>
+				<div margin="10" border="right" style="width:200px; height: 50px;">border="right"</div>
+				<div margin="10" border="top-left" style="width:200px; height: 50px;;">border"top-left"</div>
+				<div margin="10" border="bottom-right" style="width:200px; height: 50px;;">border="bottom-right"</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Text</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap">
+				<div margin="10" text="left" bg="light" style="width:200px; height: 50px;">text=left</div>
+				<div margin="10" text="center" bg="light" style="width:200px; height: 50px;">text=center</div>
+				<div margin="10" text="right" bg="light" style="width:200px; height: 50px;">text=right</div>
+				<div margin="10" text="ellipsis" bg="light" style="width:90px; height: 50px;">text=ellipsis</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Font</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap">
+				<div margin="10" font="f11" style="width:100px; height: 50px;">font=f11</div>
+				<div margin="10" font="f12" style="width:100px; height: 50px;">font=f12</div>
+				<div margin="10" font="f13" style="width:100px; height: 50px;">font=f13</div>
+				<div margin="10" font="f14" style="width:100px; height: 50px;">font=f14</div>
+				<div margin="10" font="f15" style="width:100px; height: 50px;">font=f15</div>
+				<div margin="10" font="f16" style="width:100px; height: 50px;">font=f16</div>
+				<div margin="10" font="f18" style="width:100px; height: 50px;">font=f18</div>
+				<div margin="10" font="f20" style="width:100px; height: 50px;">font=f20</div>
+				<div margin="10" font="f24" style="width:100px; height: 50px;">font=f24</div>
+				<div margin="10" font="w100" style="width:100px; height: 50px;">font=w100</div>
+				<div margin="10" font="w400" style="width:100px; height: 50px;">font=w400</div>
+				<div margin="10" font="w700" style="width:100px; height: 50px;">font=w700</div>
+				<div margin="10" style="width:100px; height: 50px;"><i font="normal">font=normal</i></div>
+				<div margin="10" font="italic" style="width:100px; height: 50px;">font=italic</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Color</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap">
+				<div margin="10" color="white" style="width:100px; height: 50px;">color=white</div>
+				<div margin="10" color="black" style="width:100px; height: 50px;">color=black</div>
+				<div margin="10" color="gray" style="width:100px; height: 50px;">color=gray</div>
+				<div margin="10" color="dark" style="width:100px; height: 50px;">color=dark</div>
+				<div margin="10" color="light" style="width:100px; height: 50px;">color=light</div>
+				<div margin="10" color="em" style="width:100px; height: 50px;">color=em</div>
+				<div margin="10" color="minor" style="width:100px; height: 50px;">color=minor</div>
+				<div margin="10" color="hot" style="width:100px; height: 50px;">color=hot</div>
+				<div margin="10" color="cold" style="width:100px; height: 50px;">color=cold</div>
+				<div margin="10" color="warm" style="width:100px; height: 50px;">color=warm</div>
+				<div margin="10" color="link" style="width:100px; height: 50px;">color=link</div>
+				<div margin="10" color="info" style="width:100px; height: 50px;">color=info</div>
+				<div margin="10" color="safe" style="width:100px; height: 50px;">color=safe</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Close</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap">
+				<div margin="10" close>close</div>
+				<div margin="10" close="medium">close=medium</div>
+				<div margin="10" close="large">close=large</div>
+			</div>
+		</div>
+	</section>
+
+	<section border="bottom">
+		<h2>Modal</h2>
+		<div border="top-left bottom-right" margin="10" padding="10">
+			<div layout="flex" flex-flow="wrap">
+				<button margin="10" id="modalbutton">显示Modal</button>
+			</div>
+		</div>
+		<div id="modal" modal="center">
+			<div modal-overlay>modal-overlay</div>
+			<div modal-content color="em" bg="gray" style="height:100px;">modal-content</div>
+		</div>
+	</section>
+
+	<section>
+		<div sticker="top" bg="gray">sticker="top"</div>
+		<div sticker="bottom" bg="gray">sticker="bottom"</div>
+	</section>
+
+</body>
+<script>
+	window.onload = function () {
+		var modalbutton = document.getElementById('modalbutton');
+		var modal = document.getElementById('modal');
+		modalbutton.onclick = function () {
+			modal.className = "active";
+		};
+		modal.onclick = function () {
+			modal.className = "";
+		};
+	};
+</script>
+</html>
