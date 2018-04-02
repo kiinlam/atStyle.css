@@ -405,7 +405,7 @@
   top: 0;
   right: 0;
   height: 1px;
-  border-top: 1px solid #dadada;
+  border-top: 1px solid #eaeaea;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: scaleY(0.5);
@@ -428,7 +428,7 @@
   right: 0;
   bottom: 0;
   height: 1px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #eaeaea;
   -webkit-transform-origin: 0 200%;
           transform-origin: 0 200%;
   -webkit-transform: scaleY(0.5);
@@ -452,7 +452,7 @@
   top: 0;
   bottom: 0;
   width: 1px;
-  border-left: 1px solid #dadada;
+  border-left: 1px solid #eaeaea;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: scaleX(0.5);
@@ -475,7 +475,7 @@
   top: 0;
   bottom: 0;
   width: 1px;
-  border-right: 1px solid #dadada;
+  border-right: 1px solid #eaeaea;
   -webkit-transform-origin: 200% 0;
           transform-origin: 200% 0;
   -webkit-transform: scaleX(0.5);
@@ -498,8 +498,8 @@
   top: 0;
   right: -100%;
   bottom: -100%;
-  border-top: 1px solid #dadada;
-  border-left: 1px solid #dadada;
+  border-top: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: scale(0.5);
@@ -524,8 +524,8 @@
   top: -100%;
   right: 0;
   bottom: 0;
-  border-right: 1px solid #dadada;
-  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
   -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
   -webkit-transform: scale(0.5);
@@ -672,7 +672,7 @@
 }
 
 [color="em"] {
-    color: #f24f4f;
+    color: #e5233f;
 }
 
 [color="minor"] {
@@ -731,7 +731,7 @@
 }
 
 [bg="em"] {
-    background-color: #f24f4f;
+    background-color: #e5233f;
 }
 
 [bg="minor"] {
@@ -842,13 +842,123 @@
 }
 
 [close="medium"] {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
 }
 
 [close="large"] {
   width: 32px;
   height: 32px;
+}
+
+/* Tick
+   ========================================================================== */
+
+/**
+ * 钩号
+ */
+
+[tick] {
+  display: inline-block;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  vertical-align: top;
+  border: 2px solid #e5233f;
+  border-radius: 9999px;
+  outline: none;
+}
+[tick]::before, [tick]::after {
+    content: "";
+    display: block;
+    position: absolute;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(0.5);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(0.5);
+    background-color: #e5233f;
+    border-radius: 4px;
+}
+
+[tick]::before {
+  height: 4px;
+  width: 62%;
+  left: 32%;
+  top: 56%;
+}
+
+[tick]::after {
+  height: 100%;
+  width: 4px;
+  left: 44%;
+  top: 22%;
+}
+
+[tick="small"] {
+  display: inline-block;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  font-size: 0;
+  border: 1px solid #e5233f;
+  border-radius: 9999px;
+  outline: none;
+}
+
+[tick="small"]::before {
+  height: 2px;
+}
+
+[tick="small"]::after {
+  width: 2px;
+}
+
+/* Arrow
+   ========================================================================== */
+
+/**
+ * 箭头
+ */
+
+[arrow] {
+  display: inline-block;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  outline: none;
+}
+[arrow]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #404141;
+    border-left: 2px solid #404141;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+[arrow="left"] {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+[arrow="right"] {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 /* Modal
