@@ -294,6 +294,10 @@
  * 外边距
  */
 
+[margin="3"] {
+  margin: 3px;
+}
+
 [margin="5"] {
   margin: 5px;
 }
@@ -329,6 +333,10 @@
 /**
  * 内边距
  */
+
+[padding="3"] {
+  padding: 3px;
+}
 
 [padding="5"] {
   padding: 5px;
@@ -668,7 +676,7 @@
 }
 
 [color="light"] {
-    color: #f4f4f4;
+    color: #fafafa;
 }
 
 [color="em"] {
@@ -696,7 +704,7 @@
 }
 
 [color="info"] {
-    color: #e1a864;
+    color: #e5af5e;
 }
 
 [color="safe"] {
@@ -727,7 +735,7 @@
 }
 
 [bg="light"] {
-    background-color: #f4f4f4;
+    background-color: #fafafa;
 }
 
 [bg="em"] {
@@ -755,7 +763,7 @@
 }
 
 [bg="info"] {
-    background-color: #e1a864;
+    background-color: #e5af5e;
 }
 
 [bg="safe"] {
@@ -851,6 +859,44 @@
   height: 32px;
 }
 
+/* Cross
+   ========================================================================== */
+
+/**
+ * 十字
+ */
+
+[cross] {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+}
+
+[cross]::before, [cross]::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.5);
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+    background-color: #fff;
+}
+
+[cross]::before {
+  width: 100%;
+  height: 4px;
+}
+
+[cross]::after {
+  width: 4px;
+  height: 100%;
+}
+
 /* Tick
    ========================================================================== */
 
@@ -861,15 +907,12 @@
 [tick] {
   display: inline-block;
   position: relative;
-  flex-grow: 0;
-  flex-shrink: 0;
   width: 24px;
   height: 24px;
   font-size: 0;
   vertical-align: top;
   border: 2px solid #e5233f;
   border-radius: 9999px;
-  outline: none;
 }
 [tick]::before, [tick]::after {
     content: "";
@@ -897,25 +940,54 @@
   top: 22%;
 }
 
-[tick="small"] {
-  display: inline-block;
-  position: relative;
-  flex-grow: 0;
-  flex-shrink: 0;
+[tick~="small"] {
   width: 13px;
   height: 13px;
-  font-size: 0;
-  border: 1px solid #e5233f;
-  border-radius: 9999px;
-  outline: none;
+  border-width: 1px;
 }
 
-[tick="small"]::before {
+[tick~="small"]::before {
   height: 2px;
 }
 
-[tick="small"]::after {
+[tick~="small"]::after {
   width: 2px;
+}
+
+[tick~="fill"] {
+  background: #e5233f;
+}
+
+[tick~="fill"]::before, [tick~="fill"]::after {
+  background-color: #fff;
+}
+
+[tick~="no-circle"] {
+  border: 0 none;
+}
+
+/* Circle
+   ========================================================================== */
+
+/**
+ * 圆圈
+ */
+
+[circle] {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  vertical-align: top;
+  border: 2px solid #9c9c9c;
+  border-radius: 9999px;
+}
+
+[circle~="small"] {
+  width: 13px;
+  height: 13px;
+  border-width: 1px;
 }
 
 /* Arrow
@@ -928,12 +1000,9 @@
 [arrow] {
   display: inline-block;
   position: relative;
-  flex-grow: 0;
-  flex-shrink: 0;
   width: 24px;
   height: 24px;
   font-size: 0;
-  outline: none;
 }
 [arrow]::before {
     content: "";
@@ -951,14 +1020,27 @@
     transform: scale(0.5);
 }
 
-[arrow="left"] {
+[arrow~="left"] {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-[arrow="right"] {
+[arrow~="right"] {
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+
+[arrow~="small"] {
+  width: 14px;
+  height: 14px;
+}
+
+[arrow~="white"]::before {
+  border-color: #fff;
+}
+
+[arrow~="gray"]::before {
+  border-color: #898989;
 }
 
 /* Modal
