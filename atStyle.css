@@ -836,28 +836,29 @@
   width: 4px;
 }
 
-[close]:hover, [close]:focus {
-    background-color: rgba(10, 10, 10, 0.3);
-}
-
-[close]:active {
-    background-color: rgba(10, 10, 10, 0.4);
-}
-
-[close="small"] {
+[clos~="small"] {
   width: 16px;
   height: 16px;
 }
 
-[close="medium"] {
+[close~="medium"] {
   width: 28px;
   height: 28px;
 }
 
-[close="large"] {
+[close~="large"] {
   width: 32px;
   height: 32px;
 }
+
+[close~="thin"]::before {
+  height: 2px;
+}
+
+[close~="thin"]::after {
+  width: 2px;
+}
+
 
 /* Cross
    ========================================================================== */
