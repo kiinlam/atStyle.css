@@ -3,4 +3,4 @@
 
 主文件为atStyle.css
 
-参考http://kiinlam.github.io/site/atStyle.css/index.html
+参考https://github.com/kiinlam/atStyle.css/blob/master/index.html
